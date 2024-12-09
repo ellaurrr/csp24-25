@@ -17,9 +17,9 @@ while (True): #true while loop that will only leave with a break
     if (play == 'y' or play == "Y"):
         print("what is your question?")
         question = input()
-        time.sleep(2)
+        time.sleep(random.randint(0,3))
         print("one sec... im still thinking")
-        time.sleep(3)
+        time.sleep(random.randint(0,3))
         response = random.choice(responseList)
         print(response)
 
