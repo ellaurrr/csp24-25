@@ -34,4 +34,4 @@ tip_percentage = int(input("How much would you like to tip? 10%, 15%, 18%, or 20
 total_cost = calculateTip(totalCost, tip_percentage)
 
 # Display the total cost
-print(f"Your total sum, including tax and tip, equals: ${total_cost:.2f}")
+print(f"Your total sum, including tax and tip, equals: ${total_cost:.2f}") #printf statement to ensure 2 decimal spaces
