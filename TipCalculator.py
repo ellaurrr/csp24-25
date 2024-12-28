@@ -13,14 +13,18 @@ def calculateTip(total, tip_percentage):  # calculates the tip based on user inp
 
 def calculateSum(): #function to calculate sum
     total = 0
-    for i in range(items):  # loops through all items
-        food_name = input(f"What was the name of item {i + 1}? ")
-        item_cost = float(input(f"What was the cost of the {food_name}? "))
-        foodItem.append(food_name)  # stores item name in the list
-        cost.append(item_cost)  # stores item cost in the list
-    for i in range(items): #loops to add costs into a total sum
-        total += cost[i]
-    return total
+    if (items != 0):
+        for i in range(items):  # loops through all items
+            food_name = input(f"What was the name of item {i + 1}? ")
+            item_cost = float(input(f"What was the cost of the {food_name}? "))
+            foodItem.append(food_name)  # stores item name in the list
+            cost.append(item_cost)  # stores item cost in the list
+        for i in range(items): #loops to add costs into a total sum
+            total += cost[i]
+        return total
+    else:
+        print("you didnt buy any items silly!")
+        return 0
 
 print("Welcome to the tip calculator!")
 items = int(input("How many items did you purchase? "))  # asks user how many items
