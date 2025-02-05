@@ -4,13 +4,11 @@ import random as r
 
 #initialize turtle objects
 t = trtl.Turtle()
-sct = trtl.Turtle()
 tmr = trtl.Turtle()
 score_writer = trtl.Turtle()
 
 #set turtle speeds
 t.speed(0)
-sct.speed(0)
 tmr.speed(0)
 score_writer.speed(0)
 
