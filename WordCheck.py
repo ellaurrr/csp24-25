@@ -8,7 +8,7 @@ def checkFive(wordsList):
 #main
 wordsFive = [] #empty list for words with 5+ letters
 
-listWords = input("give me words to check if it is 5 letters or more: ").split()
+listWords = ["matcha", "espresso", "latte", "water", "milk", "coffee", "tea", "gatorade", "boba", "celsius"]
 print(checkFive(listWords))
 
 
